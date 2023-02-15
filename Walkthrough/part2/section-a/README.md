@@ -1,8 +1,6 @@
-# A Rendering a collection, modules
+# A. Rendering a collection, modules
 
--This section focused on utilizing Array.Map for rendering jsx elements with items from an array
--As well as inquiring that items generated usin an array need a Key attribute in order to function properly
--We also put our components into a seperate folder in order to that import them as modules
+This section focused on utilizing Array.Map for rendering jsx elements with items from an array. As well as inquiring that items generated usin an array need a Key attribute in order to function properly .We also put our components into a seperate folder in order to that import them as modules
 
 
 # Getting Started with Create React App
