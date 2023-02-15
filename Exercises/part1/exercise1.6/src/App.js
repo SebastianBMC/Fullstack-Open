@@ -11,6 +11,7 @@ const Title = ({text}) => {
 const Button = ({action, name}) => {
   return(
     <button onClick={action}>{name}</button>
+    
   )
 }
 
