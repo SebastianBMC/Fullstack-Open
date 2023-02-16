@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+#Exercises 2.1-2.5
+Update of the course react app form exercise 1. Used array.map to allow for an infinite amount of courses and parts to be added. I used reduce to output a sum of the total number of exercises that were in each course.
+
+#Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
