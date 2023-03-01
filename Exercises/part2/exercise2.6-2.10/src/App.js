@@ -7,8 +7,12 @@ const App = () => {
   const [persons, setPersons] = useState([]) 
   const [newName, setNewName] = useState('New Name')
   const [newNumber, setNewNumber] = useState('')
-  const [filteredArray, setFilteredArray] = useState(persons)
+  //const [filteredArray, setFilteredArray] = useState(persons)
+  const [filter, setFilter] = useState(false)
 
+  
+  console.log(persons)
+  
   const addPerson = (event)=> {
     event.preventDefault()
     let isUnique = true
@@ -26,7 +30,7 @@ const App = () => {
         name:newName,
         number:newNumber
       }
-
+      
       setPersons(persons.concat(personObject))
     }
   }
@@ -40,8 +44,13 @@ const App = () => {
   }
 
   const handleFilterChange = (event)=> {
-    setFilteredArray(persons.filter(person => person.name.toLowerCase().includes(event.target.value.toLowerCase())))
+    setFilter(!filter)
+    //filteredArray = persons.filter(person => person.name.toLowerCase().includes(event.target.value.toLowerCase()))
   }
+  /* Checks if there is a filter or not. If yes grabs value from html element and creates new Array
+     Otherwise, always sets to the current value of the person array
+  */
+  let filteredArray = filter ? persons.filter(person => person.name.toLowerCase().includes(document.getElementById("filterInput").value.toLowerCase())) :persons 
 
   return (
     <div>

@@ -1,6 +1,6 @@
 const Filter = ({handleChange})=> {
     return(
-        <div>filter shown with: <input onChange={handleChange}/></div>
+        <div>filter shown with: <input id="filterInput" onChange={handleChange}/></div>
     )
 }
 
